@@ -5,243 +5,234 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Dr. Zhe Wang | Data Analytics | Denison University</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <meta name="theme-color" content="#A6192E">
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<head>
+    <title>Dr. Zhe Wang | Data Analytics | Denison University</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#A6192E">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
-        <style>
-            /* Homepage layout */
-            #banner {
-                display: flex;
-                align-items: flex-start;
-                gap: 3rem;
+    <style>
+        /* Custom homepage layout — avoids conflicts with HTML5 UP #banner styles */
+        .homepage-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 220px;
+            gap: 3rem;
+            align-items: start;
+            padding: 4rem 0 2rem 0;
+        }
+
+        .homepage-bio {
+            min-width: 0;
+        }
+
+        .homepage-bio p {
+            margin: 0 0 1.6rem 0;
+        }
+
+        .profile-photo {
+            width: 220px;
+            margin: 0;
+        }
+
+        .profile-photo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .homepage-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 0 0 2rem 0;
+        }
+
+        .homepage-actions .actions {
+            margin: 0;
+        }
+
+        .featured-course {
+            max-width: 900px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 20px 24px;
+            margin: 0 0 3rem 0;
+            background: #fafafa;
+        }
+
+        .featured-course .eyebrow {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin: 0 0 6px 0;
+            color: #777;
+            font-weight: 600;
+        }
+
+        .featured-course h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .featured-course p {
+            margin: 0 0 1.2rem 0;
+        }
+
+        @media screen and (max-width: 736px) {
+            .homepage-hero {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding-top: 2rem;
             }
 
-            #banner .content {
-                flex: 1;
-                min-width: 0;
+            .profile-photo {
+                width: 180px;
+                grid-row: 1;
+                margin: 0 auto;
             }
 
-            #banner .profile-photo {
-                flex: 0 0 220px;
-                max-width: 220px;
-                margin: 0.25rem 0 0 0;
+            .homepage-bio {
+                grid-row: 2;
             }
+        }
+    </style>
+</head>
 
-            #banner .profile-photo img {
-                display: block;
-                width: 100%;
-                height: auto;
-                border-radius: 6px;
-            }
+<body class="is-preload">
 
-            #banner .content > p {
-                margin: 0 0 1.5rem 0;
-            }
+<div id="wrapper">
 
-            .homepage-actions {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.75rem;
-                margin: 1.5rem 0 0 0;
-            }
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
 
-            .homepage-actions .actions {
-                margin: 0;
-            }
+            <!-- Header -->
+            <header id="header">
+                <ul class="icons">
+                    <li><a href="https://www.kaggle.com/" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCsCsqf4MJZdj5sOO6zFyeRA?view_as=subscriber" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/zhe-wang-uconnstat/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </header>
 
-            .featured-course {
-                border: 1px solid #e0e0e0;
-                border-radius: 6px;
-                padding: 18px 22px;
-                margin: 28px 0 0 0;
-                background: #fafafa;
-            }
+            <!-- Bio + photo -->
+            <section class="homepage-hero">
+                <div class="homepage-bio">
+                    <p>
+                        I'm an Assistant Professor of Statistics in the
+                        <a href="https://denison.edu/academics/data-analytics">Data Analytics</a>
+                        Program at <a href="https://denison.edu/">Denison University</a>.
+                        My research focuses on sequential analysis and applied probability,
+                        with a particular interest in statistical methods for data that evolve over time.
+                        Recent work includes applications to changepoint detection, clinical studies,
+                        and other time-dependent settings.
+                    </p>
 
-            .featured-course .eyebrow {
-                font-size: 0.8rem;
-                text-transform: uppercase;
-                letter-spacing: 0.1em;
-                margin: 0 0 6px 0;
-                color: #777;
-                font-weight: 600;
-            }
+                    <p>
+                        At Denison, I teach across the Data Analytics curriculum, from introductory
+                        statistics and probability to advanced statistical modeling and senior research.
+                        I am especially interested in undergraduate research and in helping students
+                        connect statistical ideas with computation and substantive applications.
+                    </p>
 
-            .featured-course h3 {
-                margin: 0 0 10px 0;
-            }
-
-            .featured-course p {
-                margin-bottom: 1rem;
-            }
-
-            @media screen and (max-width: 736px) {
-                #banner {
-                    flex-direction: column-reverse;
-                    gap: 1.5rem;
-                }
-
-                #banner .profile-photo {
-                    max-width: 180px;
-                    margin: 0 auto;
-                }
-            }
-        </style>
-    </head>
-
-    <body class="is-preload">
-
-        <!-- Wrapper -->
-        <div id="wrapper">
-
-            <!-- Main -->
-            <div id="main">
-                <div class="inner">
-
-                    <!-- Header -->
-                    <header id="header">
-                        <ul class="icons">
-                            <li><a href="https://www.kaggle.com/" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCsCsqf4MJZdj5sOO6zFyeRA?view_as=subscriber" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/zhe-wang-uconnstat/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                        </ul>
-                    </header>
-
-                    <!-- Banner -->
-                    <section id="banner">
-
-                        <div class="content">
-
-                            <p>
-                                I'm an Assistant Professor of Statistics in the
-                                <a href="https://denison.edu/academics/data-analytics">Data Analytics</a>
-                                Program at <a href="https://denison.edu/">Denison University</a>.
-                                My research focuses on sequential analysis and applied probability,
-                                with a particular interest in statistical methods for data that evolve over time.
-                                Recent work includes applications to changepoint detection, clinical studies,
-                                and other time-dependent settings.
-                            </p>
-
-                            <p>
-                                At Denison, I teach across the Data Analytics curriculum, from introductory
-                                statistics and probability to advanced statistical modeling and senior research.
-                                I am especially interested in undergraduate research and in helping students
-                                connect statistical ideas with computation and substantive applications.
-                            </p>
-
-                            <p>
-                                I received my Ph.D. in Statistics from the
-                                <a href="https://stat.uconn.edu/">University of Connecticut</a> in 2020,
-                                where I was advised by
-                                <a href="https://stat.uconn.edu/nitis-mukhopadhyay/">Nitis Mukhopadhyay</a>.
-                                I received my B.S. in Statistics from
-                                <a href="http://math.bnu.edu.cn/">Beijing Normal University</a> in 2016.
-                            </p>
-
-                            <!-- Main buttons -->
-                            <div class="homepage-actions">
-                                <ul class="actions">
-                                    <li><a href="pdf/CV_ZW.pdf" class="button big">CV</a></li>
-                                </ul>
-
-                                <ul class="actions">
-                                    <li>
-                                        <a href="https://calendar.app.google/16rBm911P7Pg7vZv8" class="button big">
-                                            Make an Appointment
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Featured Course -->
-                            <div class="featured-course">
-                                <p class="eyebrow">Featured Course</p>
-
-                                <h3>DA 380: Sequential Analysis</h3>
-
-                                <p>
-                                    An introduction to statistical methods for data observed over time,
-                                    including sequential testing, adaptive design, and changepoint detection.
-                                    Designed for upper-level undergraduates and suitable as an introductory
-                                    course for graduate students or students in related quantitative fields.
-                                </p>
-
-                                <ul class="actions" style="margin-bottom: 0;">
-                                    <li>
-                                        <a href="https://zhedata.quarto.pub/applied-sequential-analysis-data-science/" class="button">
-                                            Explore the Course
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <!-- Profile photo -->
-                        <span class="image object profile-photo">
-                            <img src="images/Denison.jpg" alt="Zhe Wang" />
-                        </span>
-
-                    </section>
-
+                    <p>
+                        I received my Ph.D. in Statistics from the
+                        <a href="https://stat.uconn.edu/">University of Connecticut</a> in 2020,
+                        where I was advised by
+                        <a href="https://stat.uconn.edu/nitis-mukhopadhyay/">Nitis Mukhopadhyay</a>.
+                        I received my B.S. in Statistics from
+                        <a href="http://math.bnu.edu.cn/">Beijing Normal University</a> in 2016.
+                    </p>
                 </div>
+
+                <div class="profile-photo">
+                    <img src="images/Denison.jpg" alt="Zhe Wang" />
+                </div>
+            </section>
+
+            <!-- Quick actions -->
+            <div class="homepage-actions">
+                <ul class="actions">
+                    <li><a href="pdf/CV_ZW.pdf" class="button big">CV</a></li>
+                </ul>
+
+                <ul class="actions">
+                    <li><a href="https://calendar.app.google/16rBm911P7Pg7vZv8" class="button big">Make an Appointment</a></li>
+                </ul>
             </div>
 
-            <!-- Sidebar -->
-            <div id="sidebar">
-                <div class="inner">
+            <!-- Featured course -->
+            <div class="featured-course">
+                <p class="eyebrow">Featured Course</p>
+                <h3>DA 380: Sequential Analysis</h3>
 
-                    <!-- Search -->
-                    <section id="search" class="alt">
-                        <form method="post" action="#">
-                            <input type="text" name="query" id="query" placeholder="Search" />
-                        </form>
-                    </section>
+                <p>
+                    An introduction to statistical methods for data observed over time,
+                    including sequential testing, adaptive design, and changepoint detection.
+                    Designed for upper-level undergraduates and suitable as an introductory
+                    course for graduate students or students in related quantitative fields.
+                </p>
 
-                    <!-- Menu -->
-                    <nav id="menu">
-                        <header class="major">
-                            <h2>Menu</h2>
-                        </header>
-                        <ul>
-                            <li><a href="index.html">Homepage</a></li>
-                            <li><a href="Research.html">Research</a></li>
-                            <li><a href="Teaching.html">Teaching</a></li>
-                            <li><a href="Tutorials.html">Tutorials</a></li>
-                        </ul>
-                    </nav>
-
-                    <!-- Contact -->
-                    <section>
-                        <header class="major">
-                            <h2>Get in touch</h2>
-                        </header>
-
-                        <ul class="contact">
-                            <li class="icon solid fa-envelope"><a href="#">wangz@denison.edu</a></li>
-                            <li class="icon solid fa-home">
-                                Burton D. Morgan Center - 410<br />
-                                Granville, OH 43023
-                            </li>
-                        </ul>
-                    </section>
-
-                </div>
+                <ul class="actions" style="margin-bottom: 0;">
+                    <li>
+                        <a href="https://zhedata.quarto.pub/applied-sequential-analysis-data-science/" class="button">
+                            Explore the Course
+                        </a>
+                    </li>
+                </ul>
             </div>
 
         </div>
+    </div>
 
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
 
-    </body>
+            <section id="search" class="alt">
+                <form method="post" action="#">
+                    <input type="text" name="query" id="query" placeholder="Search" />
+                </form>
+            </section>
+
+            <nav id="menu">
+                <header class="major">
+                    <h2>Menu</h2>
+                </header>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="Teaching.html">Teaching</a></li>
+                    <li><a href="Tutorials.html">Tutorials</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <header class="major">
+                    <h2>Get in touch</h2>
+                </header>
+                <ul class="contact">
+                    <li class="icon solid fa-envelope"><a href="mailto:wangz@denison.edu">wangz@denison.edu</a></li>
+                    <li class="icon solid fa-home">
+                        Burton D. Morgan Center - 410<br />
+                        Granville, OH 43023
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
