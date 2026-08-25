@@ -12,6 +12,87 @@
         <meta name="theme-color" content="#A6192E">
 		<link rel="stylesheet" href="assets/css/main.css" />
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+        <style>
+            /* Homepage layout */
+            #banner {
+                display: flex;
+                align-items: flex-start;
+                gap: 3rem;
+            }
+
+            #banner .content {
+                flex: 1;
+                min-width: 0;
+            }
+
+            #banner .profile-photo {
+                flex: 0 0 220px;
+                max-width: 220px;
+                margin: 0.25rem 0 0 0;
+            }
+
+            #banner .profile-photo img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 6px;
+            }
+
+            #banner .content > p {
+                margin: 0 0 1.5rem 0;
+            }
+
+            .featured-course {
+                border: 1px solid #e0e0e0;
+                border-radius: 6px;
+                padding: 18px 22px;
+                margin: 28px 0;
+                background: #fafafa;
+            }
+
+            .featured-course .eyebrow {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin: 0 0 6px 0;
+                color: #777;
+                font-weight: 600;
+            }
+
+            .featured-course h3 {
+                margin: 0 0 10px 0;
+            }
+
+            .featured-course p {
+                margin-bottom: 1rem;
+            }
+
+            .homepage-actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+                margin-top: 1.5rem;
+            }
+
+            .homepage-actions .actions {
+                margin: 0;
+            }
+
+            @media screen and (max-width: 736px) {
+                #banner {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 1.5rem;
+                }
+
+                #banner .profile-photo {
+                    max-width: 180px;
+                    margin: 0 auto;
+                }
+            }
+        </style>
+
 	</head>
 	<body class="is-preload">
 
@@ -38,76 +119,60 @@
 
 							<!-- Banner -->
 								<section id="banner">
-									<div class="row">
-									
-										</header>
-                                        <div class="col-10 small">
-                                        <p>
-                                       
-                                        <span class="image right">
-                                            <img src="images/Denison.jpg" alt="" />
-                                        </span>
-                                        I'm an Assistant Professor of Statistics in the <a href = "https://denison.edu/academics/data-analytics">Data Analytics</a> Program at <a href="https://denison.edu/">Denison University</a>. My research focuses on sequential analysis and applied probability, with a particular interest in statistical methods for data that evolve over time. Recent work includes applications to changepoint detection, clinical studies, and other time-dependent settings. 
-									    
+									<div class="content">
+										<p>
+											I'm an Assistant Professor of Statistics in the
+											<a href="https://denison.edu/academics/data-analytics">Data Analytics</a>
+											Program at <a href="https://denison.edu/">Denison University</a>.
+											My research focuses on sequential analysis and applied probability,
+											with a particular interest in statistical methods for data that evolve over time.
+											Recent work includes applications to changepoint detection, clinical studies,
+											and other time-dependent settings.
 										</p>
 
-										At Denison, I teach across the Data Analytics curriculum, from introductory statistics and probability to advanced statistical modeling and senior research. I am especially interested in undergraduate research and in helping students connect statistical ideas with computation and substantive applications.
-
+										<p>
+											At Denison, I teach across the Data Analytics curriculum, from introductory
+											statistics and probability to advanced statistical modeling and senior research.
+											I am especially interested in undergraduate research and in helping students
+											connect statistical ideas with computation and substantive applications.
 										</p>
-										
-										I received my Ph.D. in statistics at <a href="https://stat.uconn.edu/">University of Connecticut</a> in 2020 (Dissertation Topic: "<i>Sequential Estimation Methodologies with Observations Gathered in Groups: Theory, Practice and Data Analysis</i>". Advisors: <a href = "https://stat.uconn.edu/nitis-mukhopadhyay/"> Dr. Nitis Mukhopadhyay </a>, <a href = "https://stat.uconn.edu/joseph-glaz/"> Dr. Joseph Glaz </a> and <a href = "https://stat.uconn.edu/haim-bar/"> Dr. Haim Bar </a>). I finished my bachelor degree in Statistics in 2016, at <a href = "http://math.bnu.edu.cn/"> Beijing Normal University </a>.
-                                       
-                                        </p>
 
-											<div style="
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px 24px;
-  margin: 28px 0;
-  background-color: #fafafa;
-">
+										<p>
+											I received my Ph.D. in Statistics from
+											<a href="https://stat.uconn.edu/">the University of Connecticut</a> in 2020
+											and my B.S. in Statistics from
+											<a href="http://math.bnu.edu.cn/">Beijing Normal University</a> in 2016.
+										</p>
 
-  <p style="
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 8px;
-    color: #666;
-  ">
-    Featured Course
-  </p>
+										<div class="featured-course">
+											<p class="eyebrow">Featured Course</p>
+											<h3>DA 380: Sequential Analysis</h3>
 
-  <h3 style="margin-top: 0;">
-    DA 380: Sequential Analysis
-  </h3>
+											<p>
+												An introduction to statistical methods for data observed over time,
+												including sequential testing, monitoring, and changepoint detection.
+												Designed for upper-level undergraduates and suitable as an introductory
+												course for graduate students or students in related quantitative fields.
+											</p>
 
-  <p>
-    An introduction to statistical methods for data observed over time,
-    with topics including sequential testing, monitoring, and changepoint detection.
-  </p>
+											<ul class="actions" style="margin-bottom: 0;">
+												<li><a href="YOUR-COURSE-URL" class="button">Explore the Course</a></li>
+											</ul>
+										</div>
 
-  <p>
-    Designed for upper-level undergraduates and also suitable as an introductory
-    course for graduate students or students in related quantitative fields.
-  </p>
-
-  <a href="YOUR-COURSE-URL" style="
-    font-weight: 600;
-    text-decoration: none;
-  ">
-    Explore the course →
-  </a>
-
-</div>
-											
-										<ul class="actions">
-											<li><a href="pdf/CV_ZW.pdf" class="button big">CV</a></li>
-										</ul>
-                                        <ul class="actions">
-                                            <li><a href="https://calendar.app.google/16rBm911P7Pg7vZv8" class="button big">Make an Appointment</a></li>
-                                        </ul>
+										<div class="homepage-actions">
+											<ul class="actions">
+												<li><a href="pdf/CV_ZW.pdf" class="button big">CV</a></li>
+											</ul>
+											<ul class="actions">
+												<li><a href="https://calendar.app.google/16rBm911P7Pg7vZv8" class="button big">Make an Appointment</a></li>
+											</ul>
+										</div>
 									</div>
-								</div>
+
+									<span class="image object profile-photo">
+										<img src="images/Denison.jpg" alt="Zhe Wang" />
+									</span>
 								</section>
 
 							<!-- Section -->
